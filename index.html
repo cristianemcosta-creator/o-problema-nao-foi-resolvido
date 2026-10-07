@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plano de Excelência Oficina | Aoki Ford</title>
+<style>
+:root{
+  --ink:#17212b; --muted:#65727d; --line:#dce3e8; --bg:#f5f7f9;
+  --card:#fff; --accent:#075985; --accent2:#0f766e; --warn:#b45309;
+  --danger:#b91c1c; --ok:#166534;
+}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+.hero{background:linear-gradient(135deg,#102a43,#075985);color:#fff;padding:46px 7% 42px}
+.hero .tag{display:inline-block;border:1px solid #8ecae6;border-radius:20px;padding:6px 12px;font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+.hero h1{font-size:38px;line-height:1.1;margin:18px 0 10px;max-width:900px}
+.hero p{max-width:850px;color:#d9edf7;font-size:17px;margin:0}
+.wrap{width:min(1180px,92%);margin:0 auto}
+.grid{display:grid;gap:18px}.kpis{grid-template-columns:repeat(4,1fr);margin-top:-28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 5px 18px rgba(20,35,50,.06)}
+.kpi strong{font-size:34px;display:block}.kpi span{font-size:13px;color:var(--muted)} .red{color:var(--danger)} .green{color:var(--ok)} .blue{color:var(--accent)}
+section{padding:38px 0} h2{font-size:26px;margin:0 0 8px} h3{margin:8px 0;font-size:18px}.subtitle{color:var(--muted);margin:0 0 22px}
+.two{grid-template-columns:1.1fr .9fr}.three{grid-template-columns:repeat(3,1fr)}
+.problem{border-left:5px solid var(--danger)} .solution{border-left:5px solid var(--ok)}
+.big{font-size:44px;font-weight:800}.callout{background:#fff8ed;border:1px solid #f2d2a4;border-radius:12px;padding:18px}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:24px}
+.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;min-height:145px}
+.step .num{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-weight:bold;font-size:13px}
+.step:not(:last-child):after{content:"→";position:absolute;right:-16px;top:55px;color:#82909b;font-size:22px;z-index:2}
+.step p{font-size:13px;color:var(--muted);margin-bottom:0}
+.decision{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.decision .box{border:1px solid var(--line);border-radius:12px;padding:18px;background:#fff}
+.yes{border-top:4px solid var(--ok)!important}.no{border-top:4px solid var(--danger)!important}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden}
+th,td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:left;font-size:13px} th{background:#eef3f6;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.badge{display:inline-block;padding:4px 8px;border-radius:12px;font-size:11px;font-weight:bold}.b1{background:#fee2e2;color:#991b1b}.b2{background:#fef3c7;color:#92400e}.b3{background:#dcfce7;color:#166534}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.phase{padding:18px;background:#fff;border:1px solid var(--line);border-radius:12px}.phase strong{font-size:13px;color:var(--accent)}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.metric{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}.metric b{font-size:22px}
+.footer{background:#102a43;color:#d9edf7;padding:30px 7%;font-size:13px}
+ul{padding-left:19px} li{margin:7px 0}
+@media(max-width:900px){.kpis,.three,.two,.timeline,.metrics{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr 1fr}.step:not(:last-child):after{display:none}}
+@media(max-width:600px){.kpis,.three,.two,.timeline,.metrics,.decision{grid-template-columns:1fr}.hero h1{font-size:30px}.flow{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="tag">Plano de Qualidade • Oficina</div>
+  <h1>Reduzir o retorno de clientes por problema não solucionado</h1>
+  <p>Transformar a reclamação de retorno em um processo controlado de diagnóstico, execução, validação e acompanhamento — evitando que o veículo seja liberado sem evidência de solução.</p>
+</header>
+
+<main class="wrap">
+<section style="padding-top:0">
+  <div class="grid kpis">
+    <div class="card kpi"><strong class="red">60%</strong><span>dos clientes pesquisados retornam relatando que o problema continua ou não foi solucionado</span></div>
+    <div class="card kpi"><strong class="blue">100%</strong><span>dos serviços devem sair com diagnóstico, causa, solução e validação registrados</span></div>
+    <div class="card kpi"><strong class="green">0%</strong><span>meta de reincidência por falha de diagnóstico ou ausência de validação</span></div>
+    <div class="card kpi"><strong>24h</strong><span>prazo recomendado para contato pós-serviço com clientes de maior risco</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="grid two">
+    <div class="card problem">
+      <h2>O problema identificado</h2>
+      <p class="subtitle">O retorno do cliente não deve ser tratado apenas como uma nova passagem pela oficina. É um sinal de falha no processo.</p>
+      <ul>
+        <li>Diagnóstico incompleto ou causa raiz não identificada.</li>
+        <li>Serviço executado sem critério objetivo de validação.</li>
+        <li>Informação perdida entre recepção, consultor, técnico e cliente.</li>
+        <li>Veículo liberado sem confirmar se o sintoma foi eliminado.</li>
+        <li>Falta de acompanhamento estruturado após a entrega.</li>
+      </ul>
+    </div>
+    <div class="card solution">
+      <h2>Princípio da mudança</h2>
+      <p class="subtitle">A oficina precisa sair de um modelo de “executar o serviço solicitado” para um modelo de “resolver e comprovar a resolução”.</p>
+      <div class="callout"><b>Regra de ouro:</b><br>Não liberar o veículo apenas porque o serviço foi executado. Liberar quando houver evidência de que o problema relatado foi tratado e validado.</div>
+      <p><b>Responsabilidade:</b> cada etapa possui um responsável e um registro no CRM/ordem de serviço.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Novo processo: da reclamação à solução comprovada</h2>
+  <p class="subtitle">O processo deve impedir que uma etapa crítica seja “pulada”.</p>
+  <div class="flow">
+    <div class="step"><div class="num">1</div><h3>Recepção</h3><p>Registrar exatamente o sintoma, quando ocorre, frequência, condições e expectativa do cliente.</p></div>
+    <div class="step"><div class="num">2</div><h3>Diagnóstico</h3><p>Identificar causa provável e evidências. Quando necessário, realizar teste/inspeção complementar.</p></div>
+    <div class="step"><div class="num">3</div><h3>Decisão</h3><p>Definir reparo, necessidade de orçamento, peça, garantia ou diagnóstico adicional.</p></div>
+    <div class="step"><div class="num">4</div><h3>Execução</h3><p>Executar o serviço e registrar peças, procedimentos, medições e observações relevantes.</p></div>
+    <div class="step"><div class="num">5</div><h3>Validação</h3><p>Reproduzir o sintoma ou realizar teste equivalente para confirmar que a causa foi eliminada.</p></div>
+    <div class="step"><div class="num">6</div><h3>Entrega + Pós</h3><p>Explicar o que foi feito, registrar orientação e acompanhar o cliente conforme o risco.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Portões de decisão</h2>
+  <p class="subtitle">Antes de avançar para a próxima etapa, o responsável precisa responder “sim” ou “não”.</p>
+  <div class="decision">
+    <div class="box yes"><h3>Diagnóstico suficiente?</h3><p><b>SIM:</b> seguir para orçamento/execução.</p><p><b>NÃO:</b> não iniciar troca de componentes por tentativa. Encaminhar para diagnóstico complementar.</p></div>
+    <div class="box yes"><h3>Problema reproduzido?</h3><p><b>SIM:</b> registrar evidência e condição em que ocorre.</p><p><b>NÃO:</b> realizar teste orientado, histórico, inspeção e, se necessário, contato com o cliente.</p></div>
+    <div class="box no"><h3>Reparo executado, mas sintoma continua?</h3><p><b>SIM:</b> veículo entra automaticamente em fluxo de reincidência, com prioridade e análise de causa raiz.</p><p><b>NÃO:</b> seguir para validação e entrega.</p></div>
+    <div class="box yes"><h3>Validação concluída?</h3><p><b>SIM:</b> liberar com registro da evidência.</p><p><b>NÃO:</b> não liberar como “solucionado”. Retornar ao diagnóstico.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Checklist obrigatório de fechamento</h2>
+  <p class="subtitle">A ordem de serviço só deve ser encerrada como “problema solucionado” quando todos os itens críticos estiverem preenchidos.</p>
+  <table>
+    <thead><tr><th>Item</th><th>Pergunta de controle</th><th>Responsável</th><th>Status</th></tr></thead>
+    <tbody>
+      <tr><td>Queixa do cliente</td><td>O sintoma foi descrito com clareza?</td><td>Consultor/Recepção</td><td><span class="badge b3">Obrigatório</span></td></tr>
+      <tr><td>Diagnóstico</td><td>A causa provável/confirmada foi registrada?</td><td>Técnico</td><td><span class="badge b3">Obrigatório</span></td></tr>
+      <tr><td>Serviço</td><td>O que foi feito e quais peças foram utilizadas está registrado?</td><td>Técnico</td><td><span class="badge b3">Obrigatório</span></td></tr>
+      <tr><td>Validação</td><td>Foi realizado teste para confirmar a solução?</td><td>Técnico + Consultor</td><td><span class="badge b3">Obrigatório</span></td></tr>
+      <tr><td>Entrega</td><td>O cliente recebeu explicação sobre o serviço e orientação?</td><td>Consultor</td><td><span class="badge b3">Obrigatório</span></td></tr>
+      <tr><td>Pós-serviço</td><td>Cliente de risco foi contatado após a entrega?</td><td>CRM/Recepção</td><td><span class="badge b2">Conforme risco</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Fluxo específico para reincidência</h2>
+  <div class="grid two">
+    <div class="card">
+      <h3>Quando o cliente voltar com a mesma reclamação</h3>
+      <ol>
+        <li>Classificar imediatamente como <b>REINCIDÊNCIA</b>.</li>
+        <li>Consultar histórico da primeira passagem.</li>
+        <li>Identificar o que foi diagnosticado, feito e validado.</li>
+        <li>Não repetir automaticamente o mesmo procedimento.</li>
+        <li>Acionar liderança técnica quando houver repetição.</li>
+        <li>Definir causa raiz e plano de correção.</li>
+        <li>Registrar solução e evidência.</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>Escalonamento recomendado</h3>
+      <p><span class="badge b1">1ª reincidência</span> Consultor + Técnico responsável</p>
+      <p><span class="badge b2">2ª reincidência</span> Líder de oficina + análise de causa raiz</p>
+      <p><span class="badge b1">3ª reincidência</span> Gerência + análise formal do caso + contato personalizado</p>
+      <div class="callout"><b>Objetivo:</b> a reincidência deixa de ser “mais um retorno” e passa a ser um evento de qualidade que exige análise.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Melhorias que devem ser implantadas</h2>
+  <div class="grid three">
+    <div class="card"><h3>01 • CRM / Registro</h3><ul><li>Criar motivo “Reincidência – problema não solucionado”.</li><li>Campo para queixa original.</li><li>Campo para diagnóstico.</li><li>Campo para solução aplicada.</li><li>Campo “Validação realizada: Sim/Não”.</li></ul></div>
+    <div class="card"><h3>02 • Oficina</h3><ul><li>Checklist técnico por tipo de reclamação.</li><li>Teste de rodagem quando aplicável.</li><li>Registro de evidências.</li><li>Revisão diária dos veículos críticos.</li></ul></div>
+    <div class="card"><h3>03 • Atendimento</h3><ul><li>Confirmar a queixa na abertura.</li><li>Explicar o diagnóstico ao cliente.</li><li>Na entrega, confirmar se tudo foi esclarecido.</li><li>Acionar pós-venda em casos de maior risco.</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Indicadores para acompanhar semanalmente</h2>
+  <div class="metrics">
+    <div class="metric"><span>Indicador 01</span><br><b>% de reincidência</b><p>Nº de clientes que retornam pela mesma reclamação ÷ nº de ordens de serviço.</p></div>
+    <div class="metric"><span>Indicador 02</span><br><b>% solução na 1ª passagem</b><p>OS solucionadas sem retorno ÷ total de OS com reclamação.</p></div>
+    <div class="metric"><span>Indicador 03</span><br><b>% validação registrada</b><p>OS encerradas com evidência de validação ÷ OS encerradas.</p></div>
+    <div class="metric"><span>Indicador 04</span><br><b>Top 5 causas</b><p>Principais motivos de retorno para atacar problemas recorrentes.</p></div>
+    <div class="metric"><span>Indicador 05</span><br><b>Tempo até solução</b><p>Tempo médio entre a primeira reclamação e a resolução definitiva.</p></div>
+    <div class="metric"><span>Indicador 06</span><br><b>Reincidência por técnico/serviço</b><p>Usar para treinamento e melhoria de processo, não apenas para cobrança individual.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Plano de implantação em 30 dias</h2>
+  <div class="timeline">
+    <div class="phase"><strong>SEMANA 1</strong><h3>Diagnosticar</h3><p>Levantar os últimos retornos, categorizar causas e identificar os 5 principais motivos de reincidência.</p></div>
+    <div class="phase"><strong>SEMANA 2</strong><h3>Padronizar</h3><p>Criar campos no CRM/OS, checklist de diagnóstico, validação e fluxo de reincidência.</p></div>
+    <div class="phase"><strong>SEMANA 3</strong><h3>Treinar</h3><p>Treinar recepção, consultores, técnicos e liderança. Simular casos reais.</p></div>
+    <div class="phase"><strong>SEMANA 4</strong><h3>Medir</h3><p>Apurar indicadores, corrigir gargalos e apresentar a primeira reunião de qualidade da oficina.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="card" style="background:#eef7f7;border-color:#b8dedd">
+    <h2>Decisão de gestão recomendada</h2>
+    <p>O foco não deve ser apenas “diminuir reclamações”. A decisão é implantar um <b>processo de solução comprovada</b>, no qual nenhum veículo seja considerado resolvido sem diagnóstico registrado e validação da solução.</p>
+    <p><b>Meta sugerida:</b> reduzir a reincidência progressivamente de 60% para menos de 30% no primeiro ciclo de melhoria e, depois, estabelecer uma meta baseada na linha de base real da oficina e nos tipos de serviço.</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <b>Aoki Ford • Plano de Excelência Oficina</b><br>
+  Documento de referência para melhoria de processo, qualidade e experiência do cliente.
+</footer>
+</body>
+</html>
